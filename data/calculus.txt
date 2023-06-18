@@ -1,0 +1,2368 @@
+[Music]
+
+welcome to another mythology video let's
+
+get going today with a very familiar
+
+mathematical guessing game
+
+[Music]
+
+you all know what i'm about to say right
+
+yep you guessed it what's next
+
+pretty crazy isn't it
+
+definitely not the kind of sequence you
+
+want in the middle of an iq test
+
+of course just looking at the first five
+
+terms 1 2 4 8 16
+
+most people would bet their life that
+
+what we're dealing with here are just
+
+the good old powers of two but then very
+
+surprisingly things break down badly and
+
+the numbers start looking quite random
+
+despite all this i promise you cross my
+
+heart and hope to die i promise you that
+
+what's up there is a sequence that
+
+arises naturally in mathematics
+
+very curious
+
+but if the sequence arises naturally how
+
+can we discover the key to the pattern
+
+well next time you're confronted with a
+
+mystery sequence you could try doing
+
+this
+
+two minus one equals one
+
+four minus two is two
+
+eight minus four is four sixty minus
+
+eight is eight thirty-one minus sixteen
+
+is fifteen and so on
+
+but why stop there two minus one is one
+
+four minus two is two and so on that's
+
+it of course not two minus one is one
+
+and so on
+
+and one more time
+
+very interesting we end up with a row of
+
+ones and so there appears to be a hidden
+
+pattern after all now assuming that
+
+these ones continue we can actually
+
+calculate what the next number of our
+
+mystery sequence is how
+
+well 15 minus 8 is 7 is the same as
+
+saying that 8 plus 7 is 15. green plus
+
+orange is purple and of course that is
+
+true for any triangle in our grid there
+
+eleven plus five is sixteen five plus
+
+one is six
+
+but that means that if the ones in the
+
+bottom row continue
+
+and the purple must be
+
+six plus one is equal to seven
+
+twenty-two plus seven is twenty-nine
+
+sixty-four plus twenty-nine is
+
+ninety-three
+
+and there's the next number of our
+
+original sequence
+
+163 plus ninety-three that is
+
+256.
+
+interesting another power of 2. is that
+
+a coincidence well let's see chucking
+
+another 1 in the bottom row and
+
+calculating upwards we find that the
+
+next number in our mystery sequence is
+
+definitely not a power of two
+
+so it's still not clear yet what's going
+
+on with our mystery sequence
+
+but assuming the bottom row of once is
+
+the key
+
+and goes on forever
+
+we can still continue and reconstruct
+
+all infinitely many terms of the mystery
+
+sequence very cool
+
+and a challenge for the hardcore ones
+
+among you can you find another power of
+
+two in this sequence and is there a
+
+pattern where the powers of two occur
+
+record your findings in the comments
+
+okay we've discovered a cool trick for
+
+trying to decipher what's next iq
+
+puzzles but of course we're not done yet
+
+what we would really like is a simple
+
+rule a formula for our mystery sequence
+
+that would be great right
+
+and is it actually possible to somehow
+
+figure out all the formulas for all the
+
+sequences that end in constant rows
+
+that would be even more amazing right
+
+now a super cool way to organize our
+
+ideas into a systematic attack on these
+
+questions begins with the realization
+
+that what we're actually doing here is
+
+calculus
+
+wait what calculus
+
+all that dydx stuff yep pretty much
+
+the calculus of sequences which is what
+
+we're about to explore is a parallel
+
+universe to the familiar calculus taught
+
+in school in this strange new calculus
+
+sequences play the role of functions
+
+differences play the role of derivatives
+
+sums play the role of integrals
+
+difference equations mirror differential
+
+equations and so on
+
+and this may surprise many of you real
+
+world calculus problems are often solved
+
+using this strange sequence calculus
+
+and
+
+all of your familiar school calculus
+
+follows quite easily from the calculus
+
+of sequences super cool stuff
+
+okay
+
+today's mission
+
+to give you a crash course in the
+
+calculus of sequences and its many nice
+
+applications
+
+to begin i'll demystify our what's next
+
+puzzle solver and then we'll look at the
+
+amazing gregory newton interpolation
+
+formula sounds grand and it really is
+
+plus there will be
+
+amazing alternate reality views of many
+
+of our all-time favorites such as
+
+pascal's triangle fibonacci sequence
+
+maclaurin series and so on as usual lots
+
+and lots of amazing mats to look forward
+
+to
+
+if you don't know any calculus i'd say
+
+just buckle your mathematical seat belts
+
+follow along and don't worry about the
+
+calculus references too much i'll keep
+
+it as self-contained for you as possible
+
+all good
+
+ready great and let's go
+
+[Music]
+
+okay screw calculus is about functions
+
+so where are the functions in this setup
+
+well let's call the original sequence f
+
+for function then we can think of the
+
+terms of the sequence as the values of
+
+the function at 1 2 3 4 5 etc makes
+
+sense right first term second term third
+
+term and so on well actually instead of
+
+starting with one two three and so on in
+
+this part of the mathematical world we
+
+start at zero with a zeros term
+
+mathematicians
+
+don't you just love them
+
+anyway with that hiccup sorted we can
+
+graph our sequence just as usual
+
+there f 0 that was 1
+
+f 1 f 2 and so on
+
+ok what about the second row well the
+
+first term of the second sequence is the
+
+difference f one minus f of zero and so
+
+on
+
+and in the diagram this difference
+
+corresponds to this vertical distance
+
+but there's a second way in which this
+
+difference makes an appearance in this
+
+diagram
+
+and the second way is what's important
+
+for our story the difference is also the
+
+slope of this line segment
+
+right the slope of this blue segment is
+
+orange rise over a run of 1 and so is
+
+equal to the orange difference up there
+
+fantastic the difference in the second
+
+row are just the slopes of these
+
+segments
+
+so definitely very calculating right
+
+remember in school calculus the
+
+derivative of a function
+
+at a point
+
+gives you the slope of the function at
+
+this point
+
+so in our sequence world the second row
+
+sequence is really the derivative of the
+
+first row
+
+but not surprisingly the official name
+
+for this sequence derivative is
+
+difference so the second row is the
+
+difference of the first row and is
+
+abbreviated by a greek capital delta a
+
+greek d making all my greek viewers
+
+super happy
+
+if we're dealing with several roles we
+
+put a little superscript to distinguish
+
+between them there the first difference
+
+the second difference and the third
+
+difference of the original sequence
+
+later we also go upwards as well
+
+creating undifferences or
+
+anti-differences
+
+of course that is the counterpart to
+
+enter differentiation standard integral
+
+calculus
+
+definitely something to look forward to
+
+now let's just quickly single out the
+
+first entries in each row those entries
+
+there
+
+say you know nothing about a different
+
+scheme except for those entries then you
+
+can reconstruct part of the different
+
+scheme as we did before let me quickly
+
+animate the reconstruction process for
+
+you
+
+the green plus orange is purple as
+
+before and then it keeps going
+
+and as you've already seen if you also
+
+know all the entries of the last row
+
+then you can reconstruct the whole
+
+different scheme like this right
+
+so for example for our original mystery
+
+sequence these numbers in front and the
+
+fact that one at the bottom repeats to
+
+the right is enough to reconstruct the
+
+whole difference scheme which of course
+
+includes the mystery sequence itself at
+
+the top
+
+remember that one for later or good so
+
+far pretty easy right
+
+okay to get a feel for how all this
+
+works let's calculate the formulas for
+
+the difference of some simple but super
+
+important sequences
+
+[Music]
+
+remember our mystery sequence starts
+
+with five powers of two
+
+let's have a look at the part of the
+
+different scheme that comes from
+
+differencing those powers of two
+
+what about the second row do you notice
+
+something
+
+they had a powers of two again so it
+
+looks like the difference of the powers
+
+of two is again the powers of two let's
+
+check that this is really true okay so
+
+the formula for the difference of our
+
+sequence is this
+
+just a difference of two consecutive
+
+terms of the sequence right now we're
+
+talking about the powers of two so in
+
+this case f of n is simply equal to two
+
+to the power of n
+
+then the difference created from two to
+
+the power of n is this
+
+[Music]
+
+so 2 to 12 n is its own difference very
+
+nice does this ring a bell yep this is
+
+very reminiscent of the exponential
+
+function e to the power of x being its
+
+own derivative in standard calculus
+
+and indeed 2 to the power of n will end
+
+up playing the role of the exponential
+
+function in our strange new calculus
+
+ok what other sequences could we try
+
+well in standard calculus we get going
+
+with x squared so let's try squares in
+
+this case we put f of n is equal to n
+
+squared
+
+and the sequence of squares is this 0 1
+
+4 9 16. now the difference of the
+
+squares is this aha
+
+it's just the odd numbers very cool the
+
+difference of the squares are the odd
+
+numbers
+
+let's also do the algebra on autopilot
+
+of course
+
+two n plus one right two times whatever
+
+is even plus one is odd numbers cool
+
+and two n plus one that's almost the
+
+same as with standard calculus right
+
+there the derivative of x squared is 2x
+
+let's keep on going what's the second
+
+difference of the squares
+
+well pretty obvious
+
+three minus one is two
+
+five minus three is two
+
+and so on all twos okay so the second
+
+difference of the squares is just two
+
+and of course exactly the same is true
+
+in school calculus the second derivative
+
+of x squared is two
+
+so all in all very similar but not quite
+
+the same which is a bit annoying
+
+but that turns out to be a surprisingly
+
+easy fix which we'll get to soon
+
+anyway notice that this constant row at
+
+the bottom of the different scheme for n
+
+squared is of course also what was
+
+special in the case of our mystery
+
+sequence in the case of our mystery
+
+sequence the fourth difference is equal
+
+to one
+
+if you're familiar with calculus you can
+
+probably make his guess now what sort of
+
+functions spawned our mystery sequence
+
+got it yes
+
+no
+
+well let's keep on going okay so the
+
+second difference of the squares is
+
+constant
+
+what should we try next yep just like in
+
+school how about cubes let's see
+
+whoa nice fizzles out too this time the
+
+third difference is all sixes one more
+
+powers of four
+
+cool well and we didn't expect anything
+
+else at this point the force difference
+
+is also constant of course bells will
+
+also be ringing for everybody who
+
+recently watched my video on mercenaries
+
+miracle if you haven't watch it after
+
+this video also those constant in the
+
+bottom rows are very familiar aren't
+
+they so for example 24 is the fourth
+
+difference of n to the power of four
+
+and similarly we get this okay one two
+
+six twenty four well i'd say pretty much
+
+everybody here would again be prepared
+
+to bet their life that these are just
+
+factorials
+
+and no i'm not trying to trick you into
+
+gambling away your life that's actually
+
+correct and easy to prove we really do
+
+get the factorials forever and ever
+
+after and we'll see these factorials
+
+showing up all over the place shortly
+
+very nice stuff isn't it
+
+here are some more easy but also very
+
+important insights start with a sequence
+
+say n cubed together with its different
+
+scheme
+
+what if we had started here is double
+
+the sequence with two times n cubed
+
+well for example the difference of these
+
+two terms
+
+two times eight minus two times one
+
+that's just two times eight minus one
+
+which is just two times the original
+
+difference 7
+
+and of course the same is true for all
+
+other differences
+
+so it's clear that when you multiply the
+
+terms of a starting sequence by some
+
+constant
+
+then the new difference scheme will just
+
+be that constant
+
+times the original difference scheme
+
+easy right
+
+here's another interesting important
+
+rule which is also very easy to prove
+
+what if you add two sequences together
+
+term by term to create a new sequence
+
+well then the difference scheme of this
+
+new sequence is just the sum of the two
+
+starting difference schemes so just
+
+superimpose and add up like this
+
+nice nice nice nice nice
+
+then just like in school calculus we can
+
+use these two simple rules to build a
+
+different scheme for any polynomial
+
+sequence for example to find a different
+
+scheme for this polynomial sequence here
+
+we simply multiply the different schemes
+
+of the powers n cubed n squared n to the
+
+power of 1 and n to the power of 0 which
+
+is just 1 by those coefficients 8 2 3
+
+and 4 and add up
+
+okay
+
+now to get the difference scheme for our
+
+polynomial sequence we just have to
+
+superimpose and add up
+
+this means that the polynomial
+
+difference scheme we're after has the
+
+same number of rows as that of our
+
+highest power the last row is exactly
+
+the same constant sequence as that of
+
+our largest power just multiplied by 8.
+
+very interesting isn't it and this means
+
+that
+
+the difference schemes of absolutely all
+
+polynomial sequences end in constant
+
+rows how cool is that
+
+in fact it turns out that it is exactly
+
+the polynomial sequences that eventually
+
+result in constant rules
+
+this tells us for example that our
+
+original mystery sequence must be
+
+polynomial also its difference scheme
+
+has one more row than the scheme for our
+
+degree three polynomial up there so it's
+
+reasonable to suspect that the
+
+polynomial of our mystery sequence is of
+
+degree four
+
+but how do we find this mystery
+
+polynomial in our mystery sequence well
+
+once you know or suspect that the rule
+
+is polynomial
+
+there are a couple of different ways one
+
+natural but tedious one which you may
+
+know from school is to solve a system of
+
+linear equations
+
+then there's also something magical
+
+called the lagrange interpolation
+
+formula which builds the polynomial in
+
+one easy step
+
+i also have to talk about that one at
+
+some point
+
+today
+
+i want to show you a third way to
+
+mathematical nirvana this third way has
+
+the grand name of gregory newton
+
+interpolation formula or just gregory
+
+nugent formula or just newton formula
+
+somehow the big shots always get the
+
+credit right so we'll stick up for the
+
+little guy and refer to it as the
+
+gregory newton formula
+
+get ready for an avalanche of aha
+
+moments and beautiful mathematics
+
+[Music]
+
+okay
+
+sleeves rolled up and down to work
+
+over there is the start of another
+
+different scheme that ends in a constant
+
+row now let me show you the gregory
+
+newton formula in action the super
+
+simple procedure for finding a
+
+polynomial rule that fits the sequence
+
+at the top
+
+ready to be amazed here we go
+
+[Music]
+
+and that's all there is to it does it
+
+work
+
+newton gregory aren't people to argue
+
+with but let's check anyway plug in zero
+
+and the formula spits out one
+
+plug in one and we get eight plug in two
+
+it spits out 17
+
+and similarly for n is equal to three
+
+and n is equal to four brilliant
+
+okay all this was quite fast so let's
+
+spool back a couple of steps
+
+the spool spool
+
+it's an amazingly simple formula you
+
+just have to multiply the highlighted
+
+numbers at the start of each row by
+
+those bracket things the binomial
+
+coefficients
+
+most of you will probably remember from
+
+school that those binomial coefficients
+
+can be written like this
+
+at this point you then just have to
+
+expand and simplify to arrive at the
+
+compact formula
+
+okay
+
+back again to the original formula
+
+before we do anything else let's
+
+complete our original mission and use
+
+the gregory newton formula to write down
+
+the polynomial rule for our mystery
+
+sequence
+
+for mystery sequence all the highlighted
+
+coefficients are ones and so the formula
+
+we're after is this
+
+okay
+
+super pretty mission accomplished but of
+
+course this is mythology we prove things
+
+here i have to prove to you that the
+
+gregorian newton formula really works
+
+and i'll do that in the last part of the
+
+video
+
+but before that
+
+i want to mine the gregory newton
+
+formula for some mathematical beauty and
+
+great applications
+
+i'll now show you five insights into our
+
+new sequence calculus provided by the
+
+gregory newton formula
+
+[Music]
+
+first you can use the grand newton
+
+formula to solve
+
+any what's next riddle for example let's
+
+say we have a sequence that begins with
+
+the mathematical super constants pied
+
+and find an e
+
+so a really really mean iq test question
+
+would be
+
+what comes next
+
+easy we can make up the difference
+
+scheme and plug it into the gregory
+
+newton formula the resulting polynomial
+
+will spit out pied and phi and e and
+
+then whatever spits out next that's our
+
+answer
+
+[Music]
+
+there plug in zero you get pi plugin one
+
+you get five plugin two you get e so
+
+what comes next
+
+well plug in three
+
+and there's your answer
+
+first python 5 and e and then next is 3
+
+minus 3 5 plus pi
+
+really
+
+are you willing to bet your life on this
+
+answer is that really what comes next
+
+well
+
+yes
+
+and no
+
+gregory newton has given us a simple
+
+formula and that formula spat out 3
+
+minus 3 5 plus pi
+
+but you could similarly argue for any
+
+number to come next
+
+right so what's your favorite number
+
+today minus 666 for mischievous reasons
+
+and so what if we want 666 to come next
+
+not a problem we simply go through the
+
+gregory newton procedure starting with
+
+these four terms
+
+pi phi e and 666.
+
+okay okay not pretty but it works this
+
+example shows you that the whole what's
+
+next game is fundamentally really silly
+
+if anything can be an answer then of
+
+course nothing is an answer so on your
+
+next iq test you have my permission to
+
+answer whatever you like comes next let
+
+me know what happens
+
+on the other hand in the proper
+
+scientific context what's next is a
+
+really important question right perform
+
+a couple of experiments to explore
+
+naturally occurring phenomenon and then
+
+try to guess a natural and general rule
+
+based on the outcomes but of course you
+
+don't stop there you then also have to
+
+somehow justify that your guess is
+
+correct
+
+and so far
+
+that justification is also missing from
+
+the discussion of our original mystery
+
+sequence as i said the sequence arises
+
+naturally in mathematics so to make sure
+
+that our formula is correct we still
+
+have to prove that the formula correctly
+
+captures the mathematical context
+
+so i guess it's time to give you that
+
+context here it is
+
+take a circle and put some dots on the
+
+perimeter there one two three four five
+
+six dots draw all the lines connecting
+
+all pairs of dots
+
+then these lines will cut the circle
+
+into regions with the number of regions
+
+depending upon the location of the dots
+
+then with n dots the maximum possible
+
+number of regions is the nth term of our
+
+mystery sequence there
+
+1 2 4 8 16 and
+
+31 regions surprisingly
+
+have we found the formula for that
+
+region counting
+
+yes
+
+as it happens we have but what we
+
+haven't done is prove that our formula
+
+works forever and ever after the pretty
+
+proof is a bit too much of a tangent for
+
+this video and so i'll just link to it
+
+in the description
+
+make sure to check it out
+
+it will be on the exam okay
+
+[Music]
+
+now take any sequence of numbers
+
+whatsoever
+
+gregor and newton will always produce a
+
+formula for this sequence
+
+just usually the formula will have
+
+infinitely many terms let me explain
+
+using a super important and super pretty
+
+example
+
+remember 2 to the power of n the
+
+sequence of the powers of 2 is its own
+
+difference this means
+
+its difference scheme has infinitely
+
+many rows and all these rows will be
+
+identical there that's a different
+
+scheme for 2 to the power of n all rows
+
+are identical 1 2 4 8 16 etc and there
+
+are infinitely many of these rows and
+
+all of these infinitely many rows start
+
+with a 1
+
+and that means that the gray newton
+
+formula for 2 to the power of n is just
+
+the sum corresponding to these
+
+infinitely many highlighted ones so the
+
+sum of the infinitely many binomial
+
+coefficients
+
+so plugging in
+
+0 1 2 3 4 and so on this infinite sum is
+
+supposed to spit out the powers of two
+
+really
+
+doesn't seem likely does it okay let's
+
+check let's cross our fingers and expand
+
+those infinitely many binomial
+
+coefficients
+
+let's see what happens when we plug in n
+
+is equal to 2.
+
+look at that
+
+2-2 that's 0 and of course you get those
+
+2-2s in all the higher order terms
+
+which means that all these terms are
+
+zero
+
+so this infinite sum is really just the
+
+finite sum in disguise
+
+works and the same is true in general
+
+let's have another look at our example
+
+just like for this specific example the
+
+gregor newton series of any infinite
+
+sequence has infinitely many terms
+
+however when you evaluate this infinite
+
+formula at a positive integer
+
+all but finitely many terms of the
+
+formula will be equal to zero
+
+pretty magical and so using such a scary
+
+looking infinite formula is actually not
+
+a big deal fantastic
+
+but there is more pretty stuff here much
+
+more for example pondering this formula
+
+for 2 to the power of n for a moment
+
+some of you will be reminded of another
+
+really iconic maths formula remember we
+
+said that 2 to the power of x is the
+
+counterpart of e to the power of x in
+
+school calculus well the mega famous
+
+maclaurin series for e to the power of x
+
+goes like this
+
+have a look at it pretty much exactly
+
+the same except for those n times n
+
+minus 1 times n minus 2 etc products on
+
+top right but now since 2 to power of n
+
+is the counterpart of e to the power of
+
+x
+
+this suggests that our sequence calculus
+
+those n times n minus 1 times n minus 2
+
+products are somehow the counterparts of
+
+the nth powers in school calculus
+
+intriguing let's have a closer look
+
+these special products are called
+
+falling powers for example n times n
+
+minus
+
+1 is called n to the falling 2 and is
+
+abbreviated like this so it's indicated
+
+just like n squared but with the 2
+
+underlined and similarly with the other
+
+falling powers
+
+that n here is also n to the falling 1
+
+and the 1 in front is also end to the
+
+falling zero
+
+very nice
+
+also the name
+
+falling powers cooler
+
+and even nicer those falling powers
+
+really behave
+
+just like the normal powers as far as
+
+differencing is concerned
+
+remember the derivative of x to the
+
+power of m
+
+equals now mantra
+
+m times x to the power of m minus 1.
+
+the same is true for the falling powers
+
+the difference of x to the falling m is
+
+m times x to the falling m minus one
+
+cool
+
+a little challenge for the keen among
+
+you prove this differencing formula for
+
+the falling powers
+
+leave your proofs in the comments not
+
+terribly difficult if you have proofs
+
+for breakfast
+
+also in general the fix for the annoying
+
+factor differences of normal powers
+
+don't behave quite as nicely as their
+
+derivatives
+
+is to express things as much as possible
+
+in terms of these falling powers in
+
+sequence calculus anyway there's more as
+
+i said our falling powers formula for 2
+
+to the power of n works for n is equal
+
+to 0 1 2 3 any non-negative integer
+
+but much more is true it turns out
+
+that we can plug in any positive number
+
+any positive real number whatsoever and
+
+the formula still works
+
+that's amazing isn't it for example plug
+
+in x equal to one half there unlike when
+
+we plug in 0 1 2 3 etc none of the terms
+
+in this infinite series is 0. this is a
+
+real infinite sum but still if you add
+
+up all those infinitely many terms you
+
+really get to the power of one half and
+
+of course to the power of one half is
+
+root two
+
+and so among other things taking finite
+
+chunks of this formula gives us the way
+
+to approximate root two
+
+but a word of caution of course there
+
+are tons of real valued functions that
+
+will agree with 2 to the power of xl 0 1
+
+2 3 and so on we just join the dots any
+
+which way
+
+and obviously for any such jointed dots
+
+function gregory newton will produce the
+
+exact same formula as for 2 to the power
+
+of n
+
+but
+
+only for 2 to the power of x will this
+
+formula work for all positive real
+
+numbers
+
+very interesting isn't it
+
+what makes 2 to the power of x super
+
+special in this respect what happens for
+
+negative x for example
+
+see what you get for x equal to minus 1
+
+and x is equal to -2 for a really
+
+pleasant surprise
+
+especially if you watched one of the one
+
+plus two plus three videos
+
+now in general it's very tricky to
+
+determine what one of these gregory
+
+newton series does when x is not one of
+
+the non-negative integers some real
+
+mathematical monster mystery lurking in
+
+this area that are well beyond the scope
+
+of this video
+
+[Music]
+
+okay i also promised you that we'll be
+
+exploring what it means to
+
+anti-differentiate or integrate in the
+
+sequence calculus
+
+to motivate this let's have a look at
+
+the different scheme for the squares
+
+again well since differencing the
+
+counterpart of differentiating produces
+
+rows going down
+
+the counterpart of anti-differentiating
+
+should produce rows going up
+
+okay so how can we extend our difference
+
+scheme going up what numbers should go
+
+in those spaces here
+
+well
+
+let's just make an arbitrary choice for
+
+the first space on the left
+
+let's make this
+
+zero
+
+then the rest is forcing us by our usual
+
+reconstruction procedure
+
+zero plus zero zero plus zero plus one
+
+zero plus zero plus one plus four zero
+
+plus zero plus one plus four plus nine
+
+and so on
+
+uh-huh
+
+so while the opposite of the derivative
+
+is the anti-derivative the opposite of
+
+the difference is the anti-difference in
+
+other words the sum where summing the
+
+elements of our sequence makes sense
+
+and this means that we can also use the
+
+gregory newton formula to find formulas
+
+for the sums of sequences
+
+that's also one of the main uses for
+
+this type of calculus finding nice
+
+formulas for crazy sums of sequences
+
+here's an easy example let's calculate
+
+the formula for the sum of the squares
+
+in front of us
+
+highlight the leading entries yeah
+
+and then gregory newton tells us to just
+
+multiply these highlighted numbers by
+
+the binomial coefficients and add
+
+so plug in zero you get zero plug in one
+
+you get zero plus zero that's zero again
+
+plug in two you get one well
+
+those two ones at the beginning of our
+
+sum sequence aren't doing much are they
+
+so instead of using the highlighted zero
+
+zero one two to build the formula
+
+it's better to shift one along and begin
+
+with these guys to build a formula
+
+zero one three and two
+
+now go again plug in zero you get
+
+zero 0 0 plug in 1 you get 1 and so on
+
+much better
+
+then expanding and simplifying the sum
+
+gives you the familiar sum of squares
+
+formula
+
+many of you will have seen that one
+
+before i think
+
+beautiful and easy as i said in
+
+generally gregory newton is an
+
+incredibly useful tool for finding
+
+formulas for crazy complicated sums if
+
+you like to get an idea of what's
+
+possible i give some links in the
+
+description
+
+so you can wander down this particular
+
+rabbit hole and one more easy remark
+
+remember we started something by making
+
+our choice we chose the first entry to
+
+be 0.
+
+how would this change if we had chosen
+
+another number let's say c
+
+easy just replace the leading zero and
+
+everything that follows by c
+
+and that amounts to well just adding c
+
+to all entries of the first row and this
+
+says that our sequence sum
+
+just like the anti-derivative in school
+
+calculus is uniquely determined up to a
+
+plus c
+
+how many points have we lost in school
+
+by forgetting to write plus c when
+
+answering an integration problem well i
+
+lost quite a few anyway very neat
+
+everything's falling into place
+
+that's the end of it actually no there's
+
+one more important insight i have to
+
+share with you at this point
+
+remember this picture from earlier on
+
+remember that those differences also
+
+have a geometric meaning that mirrors
+
+the geometric meaning of the derivative
+
+in school calculus those differences are
+
+the slopes of the blue segments
+
+what's the geometric meaning of our
+
+sums there
+
+those sums at the top i'm sure that if
+
+you know some calculus you can guess the
+
+answer you've got it
+
+well f of 0 f of 1 f of 2 those are just
+
+those vertical distances
+
+but they are also those rectangle areas
+
+right those rectangles all have a base
+
+length equal to one and so their areas
+
+are equal to their heights but that
+
+means that our sums are just those
+
+staircase areas under the blue curve
+
+but now remember that in school the main
+
+use of antiderivatives is to find the
+
+area under functions aha those sums are
+
+counterparts of definite integrals in
+
+school calculus
+
+yet another puzzle piece falling into
+
+place
+
+very satisfying don't you think
+
+are you starting to feel a little bit
+
+like alice in wonderland
+
+[Music]
+
+those of you who've done some calculus
+
+in school will remember that
+
+differentiating is easy and integrating
+
+is hard
+
+what is harder than integrating calculus
+
+well
+
+solving differential equations let me
+
+also quickly show you what that looks
+
+like in sequence calculus
+
+to do that let's have a look at the
+
+different scheme of everybody's favorite
+
+sequence the fibonacci sequence
+
+well everybody's favorite except for
+
+marty my friend marty he hates the thing
+
+you'll have to ask him okay here's the
+
+start of the fibonacci sequence
+
+remember the fibonacci sequence starts
+
+with zero and one and then every term is
+
+the sum of the two preceding terms zero
+
+plus one is one
+
+one plus one is two one plus two is 3
+
+and so on
+
+okay
+
+here are the first and second
+
+differences of the fibonacci sequence
+
+have a close look
+
+can you see something remarkable
+
+happening
+
+yup the whole sequence replicates just
+
+shift it over by one there
+
+0 1 1 2 3 again and again very nice
+
+very similar to what happens with 2 to
+
+the power of n right
+
+have a look at the three entries along
+
+this diagonal line here
+
+these are just three consecutive terms
+
+of the fibonacci sequence well with the
+
+shifting in place that makes sense and
+
+so two plus three is equal to five
+
+three plus five is equal to eight and in
+
+general the second difference plus the
+
+first difference is the sequence itself
+
+or reshuffled a bit we get this equation
+
+here
+
+very nice what we've isolated here is a
+
+difference equation the fibonacci
+
+sequence is the solution to this
+
+difference equation
+
+together with the initial values 0 and
+
+1.
+
+the niftiest part is that you can also
+
+solve this difference equation pretty
+
+much exactly as the corresponding now
+
+warning warning
+
+big words coming up but don't worry
+
+about them you can solve this difference
+
+equation pretty much exactly like a
+
+linear second order homogeneous
+
+differential equation
+
+and when you do this you actually end up
+
+with benay's mega famous formula for the
+
+fibonacci numbers
+
+pretty spectacular formula
+
+all my disciples who did calculus with
+
+me here at monash uni should be able to
+
+do this can you
+
+for those of you interested in the
+
+details i linked to a write-up in the
+
+description of this video
+
+just to give you a taste for what's
+
+happening remember that the fibonacci
+
+sequence gets repeated in its own
+
+difference
+
+which is very similar to what's
+
+happening with 2 to above n being its
+
+own difference this suggests the general
+
+formula for the fibonacci sequence may
+
+also be a combination of exponential
+
+functions which ones well there's a
+
+standard way to play that guessing game
+
+exactly mirroring what is done in
+
+differential equations
+
+it all works out easy coming down to the
+
+roots of the appropriate quadratic
+
+equation
+
+following this lead gets us binai's
+
+formula
+
+right binay's formula is basically the
+
+difference of two exponential functions
+
+again very pretty stuff and another
+
+important example of how our sequence
+
+calculus can be used to find simple
+
+formulas for sequences
+
+[Music]
+
+so pretty much everything in school
+
+calculus has a counterpart in our
+
+sequence calculus
+
+here just a couple more highlights there
+
+on top is the product formula for
+
+differentiation and below is the product
+
+rule for sequence calculus prettier and
+
+there the crown jewel the fundamental
+
+theorem of calculus and below it the
+
+fundamental theorem of sequence calculus
+
+challenge for you prove this fundamental
+
+theorem of sequence calculus
+
+give it a try real fun especially if you
+
+like telescoping sums not that hard
+
+actually and this one well i already
+
+discussed that one on top of the
+
+maclaurin formula and below it the
+
+gregory newton formula in all its
+
+formulaic glory featuring the falling
+
+powers i have to make a new t-shirt with
+
+that formula here
+
+before i get into the proof of the
+
+gregory newton formula let me expand a
+
+little bit on my claim that all the
+
+sequence calculus is one way
+
+you actually apply school calculus in
+
+real life numerically
+
+let's say that's a complicated function
+
+arising from an experiment that you want
+
+to torture with calculus more often than
+
+not we will be given this function in a
+
+digitized way so we're given an
+
+approximation of the function in terms
+
+of the red points
+
+now to be able to apply our sequence
+
+calculus we simply have to scale this
+
+picture so that the small step size
+
+becomes one then apply sequence calculus
+
+and then account for the scaling in the
+
+result for example let's say we want to
+
+calculate an approximation of this area
+
+scale up and a line
+
+note down the values of the function in
+
+front of us the values at the red dots
+
+do the sequence integral
+
+then as we've seen this entry here will
+
+give this green area and of course this
+
+green area is a rough approximation of
+
+the area that we're interested in at
+
+this step
+
+and then we scale back to get the area
+
+that we are really really interested in
+
+okay
+
+nice but maybe not that super impressive
+
+but there are a couple of ways in which
+
+we can do a lot better by computing the
+
+differences
+
+now we apply gregory newton and if
+
+there's a benevolent god watching over
+
+us
+
+the resulting polynomial will
+
+approximate the blue curve very well
+
+there now because we're dealing with a
+
+simple polynomial it's a no-brainer to
+
+calculate the area under the pink
+
+polynomial curve exactly using standard
+
+calculus
+
+and if the actual blue function we're
+
+interested in is not too wild
+
+and there are theorems saying exactly
+
+what it means then the area under the
+
+pink polynomial will be an amazingly
+
+good approximation to the true area then
+
+finally we just have to account for the
+
+original scaling and we're done
+
+also
+
+if we are willing to do the careful work
+
+and if we shrink the small step size let
+
+the step size tend to zero then we can
+
+derive the whole of school calculus from
+
+the calculus of sequences
+
+obviously in this last part i've glossed
+
+over plenty of details and ignored all
+
+the nasty things that can go wrong but
+
+that's plenty of details for today i
+
+think
+
+definitely great stuff don't you think
+
+and after seeing all this
+
+calculus will never again be the same
+
+for you right
+
+okay
+
+to finish off
+
+let me sketch a proof of the gregorian
+
+newton formula for you
+
+the proof is very pretty and
+
+surprisingly easy
+
+quite a few more hormones ahead for the
+
+intrepid amongst you
+
+ready to get your hands dirty
+
+well in usual mathologer style i'll
+
+focus on showing why the formula works
+
+for a sufficiently general example
+
+once you see how the formula works for
+
+this example you should be fine to
+
+understand why it works in general but
+
+always works
+
+so there's our sample sequence
+
+and the row of differences and so
+
+why does the formula at the bottom
+
+spit out the sample sequence on top
+
+well to explain this let's first make up
+
+the difference scheme for n choose 4.
+
+remember that for us n choose 4 is just
+
+an abbreviation for this expression
+
+now plugging in n is equal to 0
+
+obviously makes the expression zero
+
+right
+
+and the same is true if we plug in n is
+
+equal to one two and three this means
+
+that the first four terms of our n
+
+choose four sequence are zeros
+
+now zero minus zero is zero and so
+
+differencing those first zeros gives a
+
+triangle of zeros
+
+what's the fifth term of the sequence
+
+well that's four choose four which is
+
+equal to one
+
+now
+
+one minus zero zero
+
+one 1 0 again and again and again
+
+now because n choose 4 is a degree 4
+
+polynomial
+
+we know that the fifth row of the
+
+difference scheme
+
+is a constant
+
+but since the first entry of this row is
+
+one
+
+it's all ones in this row right
+
+pretty pretty and that means that at
+
+this point we can hit the algebra
+
+autopilot button to reconstruct the rest
+
+of the difference scheme let's just see
+
+what happens
+
+[Music]
+
+do those numbers look familiar no what
+
+about if we rotate
+
+better can you see it now of course
+
+that's pascal's triangle
+
+and that's really no surprise the way we
+
+reconstructed the different scheme by
+
+adding up from the ones is exactly the
+
+way pascal's triangle grows downwards
+
+one plus one is two three plus three is
+
+six and so on okay let's rotate back
+
+what's really important for the way this
+
+works is that the bottom constant rows
+
+are ones
+
+and the fact that all entries on the
+
+first diagonal are zeros
+
+this pins down the whole different
+
+scheme
+
+okay now
+
+that was n choose four what about n
+
+choose three well it turns out that we
+
+can get n choose three simply by zapping
+
+the first row of n choose four
+
+fantastic of course this can be
+
+expressed by saying that the differences
+
+of n choose four gives the scheme for n
+
+choose three of course this generalizes
+
+getting there promise again
+
+a different scheme that ends in a
+
+constant row is completely determined by
+
+that constant row together with the
+
+first entries of its rows for example
+
+that scheme there has just one row and
+
+so is completely determined by the one
+
+in front
+
+and here the diagonals of the first
+
+entries that pin down all the other
+
+binomial coefficient sequences
+
+now let's build the gregor newton
+
+formula for our sample sequence so what
+
+happens to these diagonals on the left
+
+when we multiply them by the highlighted
+
+numbers well the zeros stay zeros and
+
+the ones turn into those numbers right
+
+there
+
+there
+
+now we add up in terms of the diagonals
+
+that's just superimposing and adding
+
+that shows that the binomial sum on the
+
+left gives rise to a different scheme
+
+that has exactly the same leading
+
+entries as that of our sample sequence
+
+but since the leading entries pin down
+
+the whole different scheme the different
+
+schemes of both must be the same
+
+tada
+
+proved
+
+how amazingly pretty was that
+
+well in the first instance this all only
+
+amounts to a proof that gregory neutral
+
+works for sequences whose different
+
+schemes fizzle out
+
+in a constant role like our mystery
+
+sequence what about sequences whose
+
+different schemes don't fizzle out well
+
+actually it's very easy to extend what
+
+we just said to a complete proof
+
+covering all sequences again for those
+
+of you who have proofs for breakfast can
+
+you add the missing details hint
+
+remember the part where i said two minus
+
+two is equal to zero
+
+and now
+
+since you are all sequence grandmasters
+
+that's all for today
+
+we really did cover a lot of ground and
+
+if you've made it all the way to here
+
+you've earned my seal of approval
+
+hope you enjoyed the video
+
+until next time
+
+[Music]
+
+[Music]
+
+[Music]
+
+[Music]
+
+[Music]
+
+you
+
