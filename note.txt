@@ -1,0 +1,5 @@
+Chain example with output parser: quick_chain.ipynb
+Memory usages: memory_chain.ipynb
+
+Search tool: pate/agent_search.ipynb
+Nested json: heal_ai/text_blob.ipynb
