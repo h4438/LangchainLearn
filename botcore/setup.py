@@ -8,40 +8,24 @@ def load_my_env():
     load_dotenv(f'{env_path}/.env')
 
 ## TRACE
-
-def trace_openai(session: str) -> OpenAI:
-    enable_tracing(session)
-    return get_openai_model()
-
-def trace_ai21(session: str, max_tokens = 1000) -> AI21:
-    enable_tracing(session)
-    return get_ai21_model(max_tokens = max_tokens)
-
-def trace_chat_openai(session: str) -> ChatOpenAI:
-    enable_tracing(session)
-    return get_chat_openai()
-
-## CHAT MODEL
-def get_chat_openai(model_name: str = 'text-davinci-003' ,max_tokens: int = 256) -> ChatOpenAI:
-    load_my_env()
+def trace_chat_openai(model_name: str = 'text-davinci-003' ,max_tokens: int = 256, session:str='test-deploy') -> ChatOpenAI:
+    enable_tracing()
     ai_pass = os.getenv("OPENAI")
     os.environ['OPENAI_API_KEY'] = ai_pass
     model = ChatOpenAI(model_name=model_name, max_tokens=max_tokens,verbose=True, temperature=0.0)
     print("CHAT OPENAI ready")
     return model
 
-## MODELS
-
-def get_openai_model(model_name: str = 'text-davinci-003' ,max_tokens: int = 256) -> OpenAI:
-    load_my_env()
+def trace_openai(model_name: str = 'text-davinci-003' ,max_tokens: int = 256, session: str = 'test-deploy') -> OpenAI:
+    enable_tracing()
     ai_pass = os.getenv("OPENAI")
     os.environ['OPENAI_API_KEY'] = ai_pass
     model = OpenAI(model_name=model_name, max_tokens=max_tokens,verbose=True, temperature=0.0)
     print("OPENAI ready")
     return model
 
-def get_ai21_model(model_name: str = 'j2-jumbo-instruct', max_tokens: int = 256) -> AI21:
-    load_my_env()
+def trace_ai21(model_name: str = 'j2-jumbo-instruct', max_tokens: int = 256, session: str = 'test-deploy') -> AI21:
+    enable_tracing()
     ai_pass = os.getenv("AI21")
     model = AI21(ai21_api_key=ai_pass, model=model_name, maxTokens=max_tokens, temperature=0.0)
     print("AI21 ready")

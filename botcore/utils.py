@@ -1,6 +1,15 @@
+import json
 from langchain.output_parsers import StructuredOutputParser, ResponseSchema
 from langchain import PromptTemplate, LLMChain
 from langchain.output_parsers import RegexParser
+
+# process data json
+def parse_nested_json(text):
+    a = text.strip()
+    json_data = a.strip().replace('```json', '').strip()
+    json_data = json_data.strip().replace('```', '').strip()
+    data = json.loads(json_data)
+    return data
 
 def build_prompt(inputs:list, outputs:dict, template:str, include_parser: bool = True) -> PromptTemplate:
     response_schema = [ResponseSchema(name=k, description=outputs[k])\
