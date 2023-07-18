@@ -4,3 +4,4 @@ __pycache__/
 redis.txt
 data/redis.txt
 need
+/botcore/.keys/
