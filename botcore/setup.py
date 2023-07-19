@@ -8,43 +8,43 @@ def load_my_env():
     load_dotenv(f'{env_path}/.keys/env')
 
 ## TRACE
-def trace_chat_openai(model_name: str = 'text-davinci-003' ,max_tokens: int = 256, session:str='test-deploy') -> ChatOpenAI:
+def trace_chat_openai(model_name: str = 'gpt-3.5-turbo', max_tokens: int = 256, temp: float = 0.0, session:str='test-deploy') -> ChatOpenAI:
     enable_tracing()
     ai_pass = os.getenv("OPENAI")
     os.environ['OPENAI_API_KEY'] = ai_pass
-    model = ChatOpenAI(model_name=model_name, max_tokens=max_tokens,verbose=True, temperature=0.0)
+    model = ChatOpenAI(model_name=model_name, max_tokens=max_tokens,verbose=True, temperature=temp)
     print("CHAT OPENAI ready")
     return model
 
-def trace_chat_palm2(model_name:str = 'chat-bison', max_tokens:int = 280, session:str="test-deploy") -> VertexAI:
+def trace_chat_palm2(model_name:str = 'chat-bison', max_tokens:int = 280, temp: float = 0.0, session:str="test-deploy") -> VertexAI:
     enable_tracing(session)
     service_json_path = f'{os.path.dirname(__file__)}/.keys/service_account.json'
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = service_json_path
-    model = ChatVertexAI(model_name=model_name, max_output_tokens=max_tokens,verbose=True, temperature=0.0)
+    model = ChatVertexAI(model_name=model_name, max_output_tokens=max_tokens,verbose=True, temperature=temp)
     print("Chat Vertex AI Palm 2 ready")
     return model
 
-def trace_openai(model_name: str = 'text-davinci-003' ,max_tokens: int = 256, session: str = 'test-deploy') -> OpenAI:
+def trace_openai(model_name: str = 'gpt-3.5-turbo' ,max_tokens: int = 256, temp: float = 0.0, session: str = 'test-deploy') -> OpenAI:
     enable_tracing()
     ai_pass = os.getenv("OPENAI")
     os.environ['OPENAI_API_KEY'] = ai_pass
-    model = OpenAI(model_name=model_name, max_tokens=max_tokens,verbose=True, temperature=0.0)
+    model = OpenAI(model_name=model_name, max_tokens=max_tokens,verbose=True, temperature=temp)
     print("OPENAI ready")
     return model
 
-def trace_ai21(model_name: str = 'j2-jumbo-instruct', max_tokens: int = 256, session: str = 'test-deploy') -> AI21:
+def trace_ai21(model_name: str = 'j2-jumbo-instruct', max_tokens: int = 256, temp: float = 0.0, session: str = 'test-deploy') -> AI21:
     enable_tracing()
     ai_pass = os.getenv("AI21")
-    model = AI21(ai21_api_key=ai_pass, model=model_name, maxTokens=max_tokens, temperature=0.0)
+    model = AI21(ai21_api_key=ai_pass, model=model_name, maxTokens=max_tokens, temperature=temp)
     print("AI21 ready")
     return model
 
 
-def trace_palm2(model_name:str = 'text-bison', max_tokens:int = 280, session:str="test-deploy") -> VertexAI:
+def trace_palm2(model_name:str = 'text-bison', max_tokens:int = 280, temp: float = 0.0, session:str="test-deploy") -> VertexAI:
     enable_tracing(session)
     service_json_path = f'{os.path.dirname(__file__)}/.keys/service_account.json'
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = service_json_path
-    model = VertexAI(model_name=model_name, max_output_tokens=max_tokens,verbose=True, temperature=0.0)
+    model = VertexAI(model_name=model_name, max_output_tokens=max_tokens,verbose=True, temperature=temp)
     print("Vertex AI Palm 2 ready")
     return model
 
